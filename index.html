@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='cs'>
   <head>
-    <title></title>
+    <title>Martin Zapletal</title>
     <meta charset='utf-8'>
     <meta name='description' content=''>
     <meta name='keywords' content=''>
@@ -9,6 +9,7 @@
     <meta name='robots' content='all'>
     <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
     <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <style>
   body {
   background: linear-gradient(132deg, #C48E21, #8F2259);
@@ -25,7 +26,7 @@
 
 
   a {text-decoration:none;}
-  .menuitem {border:1px solid red; border-radius:5px; float:left; margin:10px; border-width:5px 5px;}
+  .menuitem {border:1px solid #DC9A5B; border-radius:5px; float:left; margin-left:250px; margin-top:10px; border-width:5px 5px;}
   .menuitem {padding:5px 20px;}
   .menuitem:hover {background-color:black;}
   #menu {
@@ -39,7 +40,7 @@
 
 }
   #menu a {color:white; padding:15px;}
-  #menu a:hover {color:yellow; text-decoration:none;}
+  #menu a:hover {color:#D65962; text-decoration:none;}
 
 p {font-family:Open Sans, sans-serif;}
 * {margin:0;
@@ -90,6 +91,64 @@ text-align:center;
 padding:50px;
 margin-top:50px;
 }
+
+ul {display:flex;
+position:absolute;
+color:white;
+top:50%
+left:50%
+transform:translate(-50%,-50%);}
+
+ul li {list-style:none;}
+ul li a {width:80%;
+height:80%;
+background:#fff;
+text-align:center;
+line-height:80px;
+font-size:35px;
+color:black;
+display:block;
+border-radius:50%;
+margin:0 30px;
+position:relative;
+overflow:hidden;
+border:3px solid #fff;
+z-index:1;
+}
+
+ul li a .fa {
+position:relative;
+color:#262626;
+transition:.5s;
+z-index:3;}
+
+ul li a:hover .fa {
+  color:#fff;
+  transform:rotateY(360deg);
+}
+
+ul li a:before {
+  content:"";
+  position:absolute;
+  top:100%;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#f00;
+  transition:.5s;
+  z-index:2;
+}
+
+ul li a:hover:before {
+  top:0;
+}
+
+ul li:nth-child(1) a:before {
+  background:#3b5999;
+}
+ul li:nth-child(2) a:before {
+  background:#e4405f;
+}
   </style>
 
 </head>
@@ -104,8 +163,10 @@ margin-top:50px;
     <div class="profilfoto"><img src="moje fotka.jpg"></div>
     <h1>Martin Zapletal</h1>
   </header>
-
-
+<ul>
+  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+  <li><a gref="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
   <div class="about1">
     <h2>O mně</h2>
     <p>Jmenuji se Martin Zapletal. Narodil jsem se 18.2.2001 v Kroměříži a bydlím v Hulíně. Jsem student střední školy Creative Hill College ve Zlíně. Studuji obor Vývoj Multimediálních Aplikací.</p>
