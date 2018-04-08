@@ -13,6 +13,7 @@
   body {
   background: linear-gradient(132deg, #C48E21, #8F2259);
   background-size: 400% 400%;
+  width:100%;
   animation: BackgroundGradient 40s ease infinite;
   }
 
@@ -21,20 +22,6 @@
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
 }
-
-  h1 {text-align:center;
-  color:white;
-  padding:5px;
-  font-family: Open Sans, sans-serif;
-  font-size: 50px;
-  font-weight:400;
-  text-transform:uppercase;
-  position:absolute;
-  left:40%;
-  top:50%;
-  background: linear-gradient(132deg, #8F2259, #C48E21);
-  background-size: 400% 400%;
-  animation: BackgroundGradient 40s ease infinite;}
 
 
   a {text-decoration:none;}
@@ -58,10 +45,27 @@ p {font-family:Open Sans, sans-serif;}
 * {margin:0;
 padding:0;}
 
-.profilfoto {
-  border-radius: 50px;
-  border: 2px solid white;
-  margin:0.5%;padding:0.5%;
+header{
+  text-align: center;
+  height: 100vh
+}
+header h1{
+  color:white;
+  padding:5px;
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-weight:400;
+  text-transform:uppercase;
+  background: linear-gradient(132deg, #8F2259, #C48E21);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 40s ease infinite;
+}
+.profilfoto img {
+  width: 350px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 30vh auto 30px auto;
 }
 
 .about1 {background-color:#333;
@@ -69,7 +73,6 @@ color:white;
 font-size:22px;
 text-align:center;
 padding:50px;
-margin-top:1310px;
 }
 
 .about2 {background-color:#333;
@@ -77,7 +80,7 @@ color:white;
 font-size:22px;
 text-align:center;
 padding:50px;
-margin-top:500px;
+margin-top:50px;
 }
 
 .about3 {background-color:#333;
@@ -85,31 +88,35 @@ color:white;
 font-size:22px;
 text-align:center;
 padding:50px;
-margin-top:500px;
+margin-top:50px;
 }
   </style>
 
-  </head>
-  <body>
+</head>
+
+<body>
   <div id="menu">
-  <div class="menuitem"><a href="#">O mně</a></div>
-  <div class="menuitem"><a href="#">Moje záliby</a></div>
-  <div class="menuitem"><a href="#">Moje práce</a></div>
+    <div class="menuitem"><a href="#">O mně</a></div>
+    <div class="menuitem"><a href="#">Moje záliby</a></div>
+    <div class="menuitem"><a href="#">Moje práce</a></div>
   </div>
+  <header>
+    <div class="profilfoto"><img src="moje fotka.jpg"></div>
+    <h1>Martin Zapletal</h1>
+  </header>
 
-<div class="profilfoto"><img src="moje fotka.jpg"</div></img>
-  <h1>Martin Zapletal</h1>
 
-<div class="about1">
-<h2>O mně</h2>
-<p>Jmenuji se Martin Zapletal. Narodil jsem se 18.2.2001 v Kroměříži a bydlím v Hulíně. Jsem student střední školy Creative Hill College ve Zlíně. Studuji obor Vývoj Multimediálních Aplikací.</p>
-</div>
-<div class="about2">
-<h2>Moje záliby</h2>
-<p>Rád programuji, animuji a fotografuji. Jsem fanoušek filmu, hlavně válečných. Rád chodím do kina. Často hraju počítačové hry.</p>
-</div>
-<div class="about3">
-<h2>Moje práce</h2>
-</div>
- </body>
+  <div class="about1">
+    <h2>O mně</h2>
+    <p>Jmenuji se Martin Zapletal. Narodil jsem se 18.2.2001 v Kroměříži a bydlím v Hulíně. Jsem student střední školy Creative Hill College ve Zlíně. Studuji obor Vývoj Multimediálních Aplikací.</p>
+  </div>
+  <div class="about2">
+    <h2>Moje záliby</h2>
+    <p>Rád programuji, animuji a fotografuji. Jsem fanoušek filmu, hlavně válečných. Rád chodím do kina. Často hraju počítačové hry.</p>
+  </div>
+  <div class="about3">
+    <h2>Moje práce</h2>
+  </div>
+</body>
+
 </html>
